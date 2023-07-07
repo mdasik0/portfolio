@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: #121212;
+    color: white;
+}
+nav a.active {
+    color: #fe6601;
+}
+.navigation {
+    background: rgba(0,0,0,0.2);
+}
+.spaceing{
+    letter-spacing: 1.3px;
+}
+.resume{
+  letter-spacing: 2px;
+  transition: 0.5s;   
+}
+.resume:hover {
+    background: #fe6601 url(pixel.png);
+    background-size: 106px;
+    transition-delay: 0.8s;
+    animation: animate 0.8s steps(8) forwards;
+}
+@keyframes animate {
+    0%{
+        background-position-y: 0 ;
+    }
+    100%{
+        background-position-y: -480px ;
+    }
+}
