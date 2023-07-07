@@ -58,7 +58,7 @@ const Header = () => {
           </p>
           <div className=" flex gap-3">
             <a href={MyResume} download>
-              <button className="px-4 mt-6 py-1 border-2 border-[#fe6601] uppercase flex items-center gap-2 resume">
+              <button className="px-4 mt-6 py-1 border-2 duration-500 border-[#fe6601] uppercase flex items-center gap-2 resume">
                 {" "}
                 <FiDownload /> Resume
               </button>
@@ -78,15 +78,15 @@ const Header = () => {
           />
         </div>
         <div className=" flex-col lg:flex hidden items-center gap-[0.8rem] absolute left-0 -bottom-8">
-          <a className="hover:text-[#fe6601] duration-500" href="">
+          <a target="_blank" rel="noopener noreferrer"  className="hover:text-[#fe6601] hover:scale-125 duration-500" href="https://www.linkedin.com/in/mohammad-asik-56a9a3272/">
             {" "}
             <BsLinkedin />{" "}
           </a>
-          <a className="hover:text-[#fe6601] duration-500" href="">
+          <a target="_blank" rel="noopener noreferrer"  className="hover:text-[#fe6601] hover:scale-125 duration-500" href="https://github.com/mdasik0">
             {" "}
             <FaGithub />{" "}
           </a>
-          <a className="hover:text-[#fe6601] duration-500" href="">
+          <a target="_blank" rel="noopener noreferrer"  className="hover:text-[#fe6601] hover:scale-125 duration-500" href="https://www.facebook.com/itsasikhan/">
             {" "}
             <FaFacebookSquare />{" "}
           </a>
@@ -105,10 +105,10 @@ const Header = () => {
 
       {/* navbar section */}
 
-      <div className="fixed lg:bottom-10 bottom-5 z-50 w-full ">
+      
 
 
-        <nav className="w-fit flex mx-auto rounded-full lg:py-[0.6rem] py-[0.5rem] lg:px-[0.7rem] px-[0.7rem] backdrop-blur-sm navigation lg:gap-10 gap-4 items-center justify-center">
+        <nav className="w-fit flex fixed lg:bottom-6 bottom-5 z-50 rounded-full lg:py-[0.6rem] py-[0.5rem] lg:px-[0.7rem] px-[0.7rem] backdrop-blur-sm navigation lg:gap-10 gap-4 items-center justify-center lg:text-xl text-md">
 
 
 
@@ -132,7 +132,6 @@ const Header = () => {
 
         </nav>
 
-      </div>
     </header>
   );
 };

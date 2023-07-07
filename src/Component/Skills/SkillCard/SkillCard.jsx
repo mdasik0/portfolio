@@ -1,7 +1,7 @@
 
 const SkillCard = ({name, percent}) => {
     return (
-        <div>
+        <div className="hover:-translate-y-3 pb-6 duration-500">
             {/* card start*/}
             <div className="relative group">
               <h4
